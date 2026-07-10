@@ -19,6 +19,7 @@ img {
     cursor: pointer;
 }
 
+/* Nav Section Style */
 nav {
     display: flex;
     justify-content: space-between;
@@ -38,6 +39,7 @@ a {
     color: #575757;
 }
 
+/* Hero Section Style */
 header {
     background-image:linear-gradient(to right, rgba(0, 0, 0, 0.6) 30%, transparent 70%), linear-gradient(225deg, transparent 42%, rgba(0, 0, 0, 0.88) 87%), url('./images/banner.jpg');
     height: 90vh;
