@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
 img {
@@ -11,14 +12,18 @@ img {
 .common-btn {
     background-color: #1D4ED8;
     color: #FFFFFF;
-    padding: 12px 24px;
+    padding: 14px 34px;
     border-radius: 10px;
     font-weight: bold;
     font-size: 16px;
     border: none;
     cursor: pointer;
 }
-
+section{
+    max-width: 1280px;
+    padding: 60px 8%;
+    margin: 0 auto;
+}
 /* Nav Section Style */
 nav {
     display: flex;
@@ -28,7 +33,7 @@ nav {
     padding: 18px 8%;
 }
 
-ul {
+.nav-links ul {
     display: flex;
     list-style: none;
     gap: 24px;
@@ -42,13 +47,14 @@ a {
 /* Hero Section Style */
 header {
     background-image:linear-gradient(to right, rgba(0, 0, 0, 0.6) 30%, transparent 70%), linear-gradient(225deg, transparent 42%, rgba(0, 0, 0, 0.88) 87%), url('./images/banner.jpg');
-    height: 90vh;
+    min-height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 30px 0;
 }
 
 .hero-content {
@@ -57,17 +63,60 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 220px;
+    gap: 190px;
 }
 .hero-heading{
-    padding-top: 30px;
     margin-bottom: 16px;
-    font-size: 64px;
+    font-size: 72px;
 }
 .hero-text{
     color: #ffffffe6;
+    font-size: 18px;
+    width: 52%;
+    justify-self: center;
 }
 .hero-btn{
-    font-size: 22px;
-    padding: 18px 36px;
+    font-size: 20px;
+    padding: 18px 44px;
+}
+/* Speaker Section Style */
+.speaker-container{
+    padding-top: 80px;
+    padding-bottom: 140px;
+}
+.speaker-card-parent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+}
+.speaker-heading{
+    text-align: center;
+    padding-bottom: 60px;
+    font-size: 56px;
+}
+.speaker-card{
+    border: 1px solid #e5e7ebFF;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card-text{
+    padding: 24px;
+    display: grid;
+    gap: 8px;
+}
+.card-text h5{
+    color: #2563EB;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+}
+.card-text h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: #0D1B2A;
+}
+.card-text p{
+    font-size: 14px;
+    color: #575757;
 }
