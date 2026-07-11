@@ -13,6 +13,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -184,7 +188,179 @@
             </div>
 
         </section>
+
+        <!-- claude code starts here -->
+        <section class="hackathon-section">
+            <div class="hackathon-container">
+                <!-- Hackathon Top -->
+                <div class="hackathon-text">
+                    <span class="hackathon-label">24-Hour Build Challenge</span>
+                    <h2 class="hackathon-heading">The DevConf <em>Hackathon</em></h2>
+                    <p class="hackathon-details">Team up with fellow developers, build a working prototype
+                        overnight, and pitch it live to a panel of industry judges on the main stage.</p>
+                </div>
+
+                <!-- Prize Stat -->
+                <div class="hackathon-stat">
+                    <h2 class="stat-value">$50,000</h2>
+                    <p class="stat-label">Total Prize Pool</p>
+                </div>
+
+                <!-- Supporting mini stats -->
+                <div class="hackathon-mini-stats">
+                    <div class="mini-stat">
+                        <p class="mini-stat-value">60</p>
+                        <p class="mini-stat-label">Teams</p>
+                    </div>
+                    <div class="mini-stat">
+                        <p class="mini-stat-value">24</p>
+                        <p class="mini-stat-label">Hours</p>
+                    </div>
+                    <div class="mini-stat">
+                        <p class="mini-stat-value">12</p>
+                        <p class="mini-stat-label">Mentors on Call</p>
+                    </div>
+                    <div class="mini-stat">
+                        <p class="mini-stat-value">5</p>
+                        <p class="mini-stat-label">Tracks</p>
+                    </div>
+                </div>
+
+                <!-- Hackathon Info Cards -->
+                <div class="hackathon-card-container">
+                    <!-- Card: Schedule -->
+                    <div class="hackathon-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                        </div>
+                        <h3>Schedule</h3>
+                        <p class="card-value">August 14–15, 2026</p>
+                        <p class="card-desc">Kicks off 6 PM Day 1 with team formation, runs overnight, demos
+                            wrap by 6 PM Day 2.</p>
+                    </div>
+                    <!-- Card: Team size -->
+                    <div class="hackathon-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3>Team Size</h3>
+                        <p class="card-value">2–5 Members</p>
+                        <p class="card-desc">Register solo and we'll match you with a team at kickoff, or
+                            bring a squad you've already assembled.</p>
+                    </div>
+                    <!-- Card: Registration deadline -->
+                    <div class="hackathon-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Registration Closes</h3>
+                        <p class="card-value">August 1, 2026</p>
+                        <p class="card-desc">Limited to 60 teams. Pro and Team pass holders get priority
+                            access when registration opens.</p>
+                    </div>
+                    <!-- Card: Judging criteria -->
+                    <div class="hackathon-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.5 5.5 21l2-7.5L2 9h7z"></path>
+                            </svg>
+                        </div>
+                        <h3>Judged On</h3>
+                        <p class="card-value">Innovation · Execution · Impact</p>
+                        <p class="card-desc">Senior engineers and founders score every demo on originality,
+                            technical depth, and real-world usefulness.</p>
+                    </div>
+                </div>
+
+                <!-- Tracks: scrolling ticker. The list is duplicated once
+                     below so the CSS animation (translateX -50%) loops
+                     seamlessly with no visible jump or JavaScript. -->
+                <div class="hackathon-tracks-wrap">
+                    <div class="hackathon-tracks">
+                        <span class="hackathon-track">AI &amp; Machine Learning</span>
+                        <span class="hackathon-track">Web3 &amp; Blockchain</span>
+                        <span class="hackathon-track">Cloud &amp; DevOps</span>
+                        <span class="hackathon-track">Open Source Tooling</span>
+                        <span class="hackathon-track">Developer Experience</span>
+                        <!-- duplicate set for the seamless loop -->
+                        <span class="hackathon-track">AI &amp; Machine Learning</span>
+                        <span class="hackathon-track">Web3 &amp; Blockchain</span>
+                        <span class="hackathon-track">Cloud &amp; DevOps</span>
+                        <span class="hackathon-track">Open Source Tooling</span>
+                        <span class="hackathon-track">Developer Experience</span>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="hackathon-footer">
+                    <button class="common-btn hackathon-btn">Register Your Team</button>
+                    <p class="hackathon-note">Free for all Pro and Team pass holders.</p>
+                </div>
+            </div>
+        </section>
+        <!-- claude code ends here -->
     </main>
+    <!-- Footer section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <a href="#"><img src="./images/logo-mini.png" alt="footer-logo"></a>
+                </div>
+                <div class="footer-social-icons">
+                    <!-- X / Twitter -->
+                    <a href="#" class="social-icon" aria-label="X">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M18.9 2H22l-7.4 8.5L23.3 22H16.7l-5.2-6.8L5.6 22H2.5l7.9-9.1L1.5 2h6.8l4.7 6.2L18.9 2zm-1.2 18h1.7L7.4 4h-1.8l12.1 16z" />
+                        </svg>
+                    </a>
+                    <!-- GitHub -->
+                    <a href="#" class="social-icon" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.6.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1.1 1.5 1.1.9 1.6 2.3 1.1 2.9.8.1-.7.3-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.7 1a9.2 9.2 0 0 1 4.9 0c1.9-1.3 2.7-1 2.7-1 .6 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .3.3.6.9.6 1.8v2.7c0 .3.2.6.7.5A10.1 10.1 0 0 0 22 12.2C22 6.6 17.5 2 12 2z" />
+                        </svg>
+                    </a>
+                    <!-- LinkedIn -->
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M6.9 8.4H3.6V20H6.9V8.4zM5.3 3.4a1.9 1.9 0 1 0 0 3.9 1.9 1.9 0 0 0 0-3.9zM20.4 20h-3.3v-5.9c0-1.4 0-3.2-2-3.2s-2.3 1.5-2.3 3.1V20H9.6V8.4h3.2v1.6h.1c.4-.8 1.6-1.7 3.2-1.7 3.4 0 4.3 2.3 4.3 5.2V20z" />
+                        </svg>
+                    </a>
+                    <!-- YouTube -->
+                    <a href="#" class="social-icon" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M22.5 7.2s-.2-1.6-.9-2.3c-.9-.9-1.9-.9-2.3-1C16.2 3.6 12 3.6 12 3.6h0s-4.2 0-7.3.3c-.4 0-1.4.1-2.3 1-.7.7-.9 2.3-.9 2.3S1.2 9 1.2 10.9v1.8c0 1.9.3 3.7.3 3.7s.2 1.6.9 2.3c.9.9 2 .9 2.5 1 1.8.2 7.1.3 7.1.3s4.2 0 7.3-.3c.4-.1 1.4-.1 2.3-1 .7-.7.9-2.3.9-2.3s.3-1.8.3-3.7v-1.8c0-1.9-.3-3.7-.3-3.7zM9.8 15V8.9l6 3-6 3.1z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <hr class="footer-devider">
+            <div class="footer-bottom">
+                <p>&copy; 2026 DevConf. All rights reserved.</p>
+                <div class="footer-bottom-right">
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

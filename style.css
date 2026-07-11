@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
+
 img {
     width: 100%;
 }
@@ -18,12 +19,15 @@ img {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    transition: .3s;
 }
-section{
+
+section {
     max-width: 1280px;
     padding: 60px 8%;
     margin: 0 auto;
 }
+
 /* Nav Section Style */
 nav {
     display: flex;
@@ -44,9 +48,17 @@ a {
     color: #575757;
 }
 
+nav a {
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #2563EB;
+}
+
 /* Hero Section Style */
 header {
-    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.6) 30%, transparent 70%), linear-gradient(225deg, transparent 42%, rgba(0, 0, 0, 0.88) 87%), url('./images/banner.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 30%, transparent 70%), linear-gradient(225deg, transparent 42%, rgba(0, 0, 0, 0.88) 87%), url('./images/banner.jpg');
     min-height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,80 +77,94 @@ header {
     text-align: center;
     gap: 190px;
 }
-.hero-heading{
+
+.hero-heading {
     margin-bottom: 16px;
     font-size: 72px;
 }
-.hero-text{
+
+.hero-text {
     color: #ffffffe6;
     font-size: 18px;
     width: 52%;
     justify-self: center;
 }
-.hero-btn{
+
+.hero-btn {
     font-size: 20px;
     padding: 18px 44px;
 }
+
 /* Speaker Section Style */
-.speaker-container{
+.speaker-container {
     padding-top: 80px;
 }
-.speaker-card-parent{
+
+.speaker-card-parent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 36px;
 }
-.speaker-heading{
+
+.speaker-heading {
     text-align: center;
     padding-bottom: 60px;
     font-size: 56px;
 }
-.speaker-card{
+
+.speaker-card {
     border: 1px solid #e5e7ebFF;
     border-radius: 12px;
     overflow: hidden;
 }
 
-.card-text{
+.card-text {
     padding: 24px;
     display: grid;
     gap: 8px;
 }
-.card-text h5{
+
+.card-text h5 {
     color: #2563EB;
     font-size: 12px;
     letter-spacing: 0.3px;
     font-weight: 600;
 }
-.card-text h3{
+
+.card-text h3 {
     font-size: 20px;
     font-weight: bold;
     color: #0D1B2A;
 }
-.card-text p{
+
+.card-text p {
     font-size: 14px;
     color: #575757;
 }
 
 /* Pricing Section Style */
-.pricing-text{
+.pricing-text {
     text-align: center;
 }
-.pricing-heading{
+
+.pricing-heading {
     font-size: 48px;
     color: #0D1B2A;
     margin-bottom: 12px;
 }
-.pricing-details{
+
+.pricing-details {
     color: #575757;
 }
-.pricing-card-container{
-    padding: 46px;
+
+.pricing-card-container {
+    padding: 46px 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
-.pricing-card{
+
+.pricing-card {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -146,76 +172,489 @@ header {
     border: 1px solid #E5E7EB;
     border-radius: 12px;
 }
-.plan-name{
+
+.plan-name {
     font-size: 13px;
     color: #888888;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.pricing-header h2{
+
+.pricing-header h2 {
     font-size: 40px;
     color: #0D1B2A;
     margin-bottom: 4px;
 }
-.pricing-header p{
+
+.pricing-header p {
     font-size: 13px;
     color: #888888;
 }
-.pricing-card hr{
+
+.pricing-card hr {
     border: none;
     height: 1px;
     background-color: #E5E7EB;
     margin: 20px 0;
 }
-.pro-card hr{
+
+.pro-card hr {
     background-color: #ffffff1A;
 }
-.feature-list{
+
+.feature-list {
     list-style: disc;
     padding-left: 16px;
 }
-.feature-list li{
+
+.feature-list li {
     margin-bottom: 10px;
     font-size: 14px;
     color: #333333;
 }
-.pro-card .feature-list li{
+
+.pro-card .feature-list li {
     color: #ffffffCC;
 }
-.feature-list li::marker{
+
+.feature-list li::marker {
     color: #2563EB;
 }
-.pricing-btn{
+
+.pricing-btn {
     margin-top: 10px;
     width: 100%;
     font-size: 14px;
     font-weight: 600;
     border-radius: 8px;
 }
-.standard-btn{
+
+.standard-btn {
     border: 1px solid #2563EB;
     background-color: #FFFFFF;
     color: #2563EB;
 }
-.pro-card{
+
+.pro-card {
     background-color: #0D1B2A;
     color: #FFFFFF;
 
 }
-.pro-card .plan-name{
+
+.pro-card .plan-name {
     color: #93C5FD;
 }
-.pro-card h2{
+
+.pro-card h2 {
     color: #FFFFFF;
 }
-.pro-card p{
+
+.pro-card p {
     color: #7F868D;
 }
-.team-card{
-    background-color: #f8f9fbFF;;
+
+.team-card {
+    background-color: #f8f9fb;
 }
-.team-btn{
+
+.team-btn {
     border: 1px solid #0d1b2aFF;
     background-color: #FFFFFF;
-    color: #0d1b2aFF;;
+    color: #0d1b2aFF;
+}
+
+.common-btn:hover,
+.pricing-btn:hover {
+    background: #1E40AF;
+    color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .15);
+}
+
+/* Claude  code starts here */
+
+/* ================================================================
+   HACKATHON SECTION STYLE
+   ================================================================*/
+
+.hackathon-section {
+    position: relative;
+    max-width: 100%;
+    padding: 0;
+    overflow: hidden;
+    background-image:
+        radial-gradient(#ffffff14 1px, transparent 1px),
+        linear-gradient(160deg, #142B45 0%, #0D1B2A 45%, #060B12 100%);
+    background-size: 28px 28px, 100% 100%;
+}
+
+.hackathon-section::before,
+.hackathon-section::after {
+    content: "";
+    position: absolute;
+    width: 460px;
+    height: 460px;
+    border-radius: 50%;
+    filter: blur(130px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.hackathon-section::before {
+    background-color: #2563EB;
+    opacity: .28;
+    top: -100px;
+    left: -80px;
+}
+
+.hackathon-section::after {
+    background-color: #1D4ED8;
+    opacity: .24;
+    bottom: -120px;
+    right: -80px;
+}
+
+.hackathon-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 90px 8% 70px 8%;
+}
+
+/* --- Header --- */
+.hackathon-text {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 56px auto;
+}
+
+.hackathon-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    border: 1px solid #1D4ED8;
+    border-radius: 999px;
+    background-color: #1d4ed81a;
+    color: #93C5FD;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Live pulsing dot — signals "active event", not just decoration */
+.hackathon-label::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #93C5FD;
+    box-shadow: 0 0 6px 2px #93c5fd99;
+    animation: pulse-dot 1.8s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: .4;
+        transform: scale(.7);
+    }
+}
+
+.hackathon-heading {
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+}
+
+/* Gradient-text treatment on the key word, echoes the section's
+   own background gradient instead of a flat highlight color */
+.hackathon-heading em {
+    font-style: normal;
+    background: linear-gradient(90deg, #2563EB, #93C5FD);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hackathon-details {
+    color: #B8C0CC;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* --- Signature prize stat + supporting mini-stats row --- */
+.hackathon-stat {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.stat-value {
+    font-size: 84px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: -1px;
+    background: linear-gradient(90deg, #FFFFFF, #93C5FD, #2563EB);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.stat-label {
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #B8C0CC;
+}
+
+/* Small supporting numbers under the hero stat — adds credibility
+   without competing with the main figure for attention */
+.hackathon-mini-stats {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    padding: 28px 0 60px 0;
+    border-bottom: 1px solid #ffffff1a;
+    margin-bottom: 56px;
+}
+
+.mini-stat {
+    text-align: center;
+}
+
+.mini-stat-value {
+    font-size: 36px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.mini-stat-label {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #7F868D;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+/* --- Info cards --- */
+.hackathon-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 56px;
+}
+
+.hackathon-card {
+    background-color: #ffffff10;
+    border: 1px solid #ffffff26;
+    border-radius: 12px;
+    padding: 28px 22px;
+    /* Subtle inner top highlight — a common "premium dark UI" cue,
+       makes the card read as a raised surface catching light rather
+       than a flat tinted box. */
+    box-shadow: inset 0 1px 0 #ffffff1f;
+    transition: .3s;
+}
+
+.hackathon-card:hover {
+    border-color: #2563EB;
+    background-color: #ffffff18;
+    transform: translateY(-4px);
+    box-shadow: inset 0 1px 0 #ffffff1f, 0 16px 32px #1d4ed840;
+}
+
+.card-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #2563EB, #1D4ED8);
+    margin-bottom: 18px;
+}
+
+.card-icon svg {
+    width: 20px;
+    height: 20px;
+    stroke: #FFFFFF;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.hackathon-card h3 {
+    font-size: 17px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.card-value {
+    font-size: 14px;
+    font-weight: 600;
+    color: #93C5FD;
+    margin-bottom: 10px;
+}
+
+.card-desc {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #9CA3AF;
+}
+
+/* --- Track ticker (infinite marquee, pure CSS) ---
+   A scrolling strip reads as "live event feed" and gives the
+   section a second signature moment beyond the hero stat. The
+   track list is duplicated once in the HTML; animating the
+   wrapper -50% on the X axis creates a seamless infinite loop
+   with no JavaScript required. */
+.hackathon-tracks-wrap {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+    margin-bottom: 56px;
+}
+
+.hackathon-tracks {
+    display: flex;
+    width: max-content;
+    gap: 12px;
+    animation: scroll-tracks 22s linear infinite;
+}
+
+.hackathon-tracks:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll-tracks {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.hackathon-track {
+    flex: 0 0 auto;
+    padding: 9px 18px;
+    border-radius: 999px;
+    border: 1px solid #ffffff26;
+    background-color: #ffffff08;
+    font-size: 13px;
+    font-weight: 600;
+    color: #93C5FD;
+    white-space: nowrap;
+}
+
+/* --- CTA footer --- */
+.hackathon-footer {
+    text-align: center;
+}
+
+.hackathon-btn {
+    background: #1D4ED8;
+    box-shadow: 0 10px 28px #1d4ed840;
+}
+
+.hackathon-btn:hover {
+    box-shadow: 0 14px 34px #1d4ed866;
+}
+
+.hackathon-note {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #9CA3AF;
+}
+
+/* Claude  code ends here */
+
+/* Footer */
+.footer-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 26px 8%;
+    background-color: #0D1B2A;
+    color: #ffffff;
+}
+
+.footer-logo img {
+    width: 40px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-social-icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.social-icon svg {
+    width: 26px;
+    height: 26px;
+    fill: #ffffff;
+}
+
+.social-icon:hover {
+    background-color: #93C5FD;
+    border-color: #93C5FD;
+}
+
+.social-icon:hover svg {
+    fill: #0D1B2A;
+}
+
+.footer-devider {
+    border: none;
+    height: 1px;
+    background-color: #ffffff1a;
+    margin: 22px 0;
+}
+
+.footer-bottom p {
+    color: #7F868D;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-bottom-right {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-bottom-right a {
+    color: #ffffff66;
 }
