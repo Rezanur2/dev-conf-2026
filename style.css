@@ -33,7 +33,7 @@ nav {
     padding: 18px 8%;
 }
 
-.nav-links ul {
+ul {
     display: flex;
     list-style: none;
     gap: 24px;
