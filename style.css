@@ -583,11 +583,14 @@ header {
 /* Claude  code ends here */
 
 /* Footer */
+footer{
+    background-color: #0D1B2A;
+}
 .footer-container {
     max-width: 1280px;
     margin: 0 auto;
     padding: 26px 8%;
-    background-color: #0D1B2A;
+
     color: #ffffff;
 }
 
