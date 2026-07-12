@@ -583,19 +583,29 @@ header {
 /* Claude  code ends here */
 
 /* Footer */
-footer{
+footer {
     background-color: #0D1B2A;
 }
+
 .footer-container {
     max-width: 1280px;
     margin: 0 auto;
     padding: 26px 8%;
-
     color: #ffffff;
 }
 
 .footer-logo img {
     width: 40px;
+}
+
+.footer-logo {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+span.footer-logo-text {
+    display: flex;
 }
 
 .footer-top {
@@ -650,7 +660,7 @@ footer{
 .footer-bottom {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    padding: 12px 0;
 }
 
 .footer-bottom-right {
